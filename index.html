@@ -48,11 +48,14 @@
 
 	<script id="articleTable" type="text/html">
 		<table>
-			<tr><th class="fancy">&#8470;</th><th class="date">Date</th><th class="">Article</th><th>Tags</th><th>Excerpt</th></tr>
+			<tr><th class="fancy">&#8470;</th><th class="date">Data</th><th class="">Progetto</th>
+			<th>Stato</th><th>azione</th><th>Referenti</th></tr>
 		  {{#rows}}
-		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a href="{{url}}" target="_blank">{{article}}</a></td>
-		  	<td class="tag">{{#tags}}<a href="#">{{tag}}</a> {{/tags}}</td>
-		<td class="tag">{{#excerpt}}<a href="#">{{excerpt}}</a> {{/excerpt}}</td></tr>
+		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{Data}}</td>
+			<td class="article"><a href="{{url}}" target="_blank">{{Progetto}}</a></td>
+		  	<td class="tag"><a href="#">{{Stato}}</a></td>
+		<td class="tag">{{#azione}}<a href="#">{{azione}}</a> {{/azione}}</td>
+		<td><{{Referenti}}/td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
